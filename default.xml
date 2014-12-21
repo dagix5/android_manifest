@@ -10,10 +10,6 @@
   <remote name="dagix5"
           fetch="https://github.com/dagix5/" />
 
-  <remote name="cm" 
-          fetch="https://github.com/CyanogenMod/" 
-          review="review.cyanogenmod.com" />
-
   <project path="build" name="android_build" groups="pdk" remote="dagix5" revision="master" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -165,6 +161,8 @@
   <project path="external/libphonenumber" name="platform/external/libphonenumber" />
   <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
   <project path="external/libppp" name="platform/external/libppp" />
+  <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
+  <project path="external/libsepol" name="android_external_libsepol" groups="pdk" remote="dagix5" revision="master" />
   <project path="external/libssh2" name="platform/external/libssh2" />
   <project path="external/libusb" name="platform/external/libusb" />
   <project path="external/libusb-compat" name="platform/external/libusb-compat" />
@@ -443,8 +441,6 @@
   <project path="device/samsung/toroplus" name="device/samsung/toroplus" groups="device,tuna" revision="refs/tags/android-4.3.1_r1" />
   <project path="device/samsung/tuna" name="android_device_samsung_tuna" groups="device,tuna" remote="dagix5" revision="master" />
 
-  <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-11.0" />
-  <project path="external/libsepol" name="android_external_libsepol" groups="pdk" remote="cm" revision="cm-11.0" />
-  <project path="external/libselinux" name="android_external_libselinux" groups="pdk" remote="cm" revision="cm-11.0" />
+  <project path="external/busybox" name="android_external_busybox" remote="dagix5" revision="master" />
 
 </manifest>
