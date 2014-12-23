@@ -447,4 +447,11 @@
 
   <project path="external/busybox" name="android_external_busybox" remote="slim" revision="kk4.4" />
 
+  <project path="vendor/broadcom" name="android_vendor_broadcom" remote="dagix5" revision="master" />
+  <project path="vendor/imgtec" name="android_vendor_imgtec" remote="dagix5" revision="master" />
+  <project path="vendor/invensense" name="android_vendor_invensense" remote="dagix5" revision="master" />
+  <project path="vendor/nxp" name="android_vendor_nxp" remote="dagix5" revision="master" />
+  <project path="vendor/samsung" name="android_vendor_samsung" remote="dagix5" revision="master" />
+  <project path="vendor/widevine" name="android_vendor_widevine" remote="dagix5" revision="master" />
+
 </manifest>
